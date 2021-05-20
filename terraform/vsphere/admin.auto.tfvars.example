@@ -1,0 +1,37 @@
+# Can also be set via the env var 'VSPHERE_USERNAME' on the machine-controller
+vsphere_user = "svc-terraform@vinlab.com"
+# Can also be set via the env var 'VSPHERE_ADDRESS' on the machine-controller
+# example: 'https://your-vcenter:8443'. '/sdk' gets appended automatically
+vsphere_vcenter        = "vcenter.vin-lab.com"
+vsphere_unverified_ssl = true
+dc_name                = "vin-lab.com"
+# Can also be set via the env var 'VSPHERE_PASSWORD' on the machine-controller
+vsphere_password = "P@ssw0rd"
+#ssh_public_key_file = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDPL+ZTDUkr44J+w52I7aDTKIWiEyVZzgmi2wfnJAVpEOLRmg9D6T5VZcLCeYHmc1qlcvxBroksS78UxPRV3228KCfIOyjc1qc/gOAkKqLXhQZ0qHPfdhTy7oHEEs1IEBW+xx2mZVElmWBqxavWQ09rCtMC2iwG1N7S0UV7qy4cKceCalT3m6mDCGzKNbJqgMsi5cxm69BscJNaElRxCV89/Uq1163TMDogjkeZC5quVC6WbKxkMEzaUr+UX8oBoMnHncyzD4dwk9l7coSYTsNI4ND4BMraqhhYv2GrLdOflHicBf1qdm10oSKSRZgBchI9MTtMikSHWmkZaCviJ3GuS4koTLdbqJ4SKEgomIrNuMfLlAQjEJXw70g8gvqhwoDuIzE/0zjLPTzCgFIsZAFcYWdZCjRa358XQ/Cn0dAHPIolkj7fGi3PE4ZZd2/A6+EOpjK0h8MIK9fNTo6WdaQhFtrgdZnZ8TFse9/h37gKJETjpGnA8luBv+mM/bn5lldW/9QTnrgHD4r85gJwlWj8O2+VLaxMWp5I1wS47iD2gtTHgZSwOmdKH7tlecgiqpueGvQ3XNP+MyKQnPsdWJfFKfKe/h76KWZw4iMEYkP+QfEi6lhzFIPJg00/tl9l6xm589/7OgK0zQ6zVYgSyZEoaYJF28gaUOgd+IEFbr+xAw== root@RYZEN2700X"
+ssh_private_key_file = "~/.ssh/id_rsa"
+# datacenter name
+datacenter = "vin-lab.com"
+# VM template name
+template_name = "ubuntu-20.04"
+# Optional. Sets the networks on the VM. If no network is specified, the template default will be used.
+network_name = "192.168.3.0"
+# Optional
+folder_name  = "kubeone"
+cluster_name = "kubeone-1"
+# Optional= Force VMs to be provisoned to the specified resourcePool
+# Default is to use the resourcePool of the template VM
+# example= kubeone or /DC/host/Cluster01/Resources/kubeone
+#resourcePool= kubeone
+compute_cluster_name = "shuttles-k8s"
+# either datastore or datastoreCluster have to be provided.
+datastore_name = "synology2_ssd"
+#datastoreCluster= datastore-cluster1
+# Can also be set via the env var 'VSPHERE_ALLOW_INSECURE' on the machine-controller
+allowInsecure = true
+# instance resources
+cpus     = 2
+memoryMB = 2048
+# Optional: Resize the root disk to this size. Must be bigger than the existing size
+# Default is to leave the disk at the same size as the template
+#diskSizeGB= 10
+ssh_username = "vinnie"

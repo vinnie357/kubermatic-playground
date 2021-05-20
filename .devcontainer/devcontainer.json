@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.155.1/containers/ubuntu
 {
-	"name": "repo-template",
+	"name": "kubermatic-playground",
 	"build": {
 		"dockerfile": "Dockerfile",
 		// Update 'VARIANT' to pick an Ubuntu version: focal, bionic$
@@ -20,6 +20,7 @@
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
     "f5devcentral.vscode-f5",
+    "f5devcentral.vscode-nim",
     "eamodio.gitlens",
     "github.vscode-pull-request-github",
     "github.github-vscode-theme",

@@ -1,3 +1,17 @@
 fileignoreconfig:
 - filename: .devcontainer/scripts/docker-debian.sh
   checksum: 3109be3be53c3dad4a7cfcd0c07c87cd41ab26cc24e1fd4110fe69ecb955ae9a
+- filename: scripts/env.sh
+  checksum: 7a1d0884a658c2579f9b4f31f0f871975d7fe151ef1c4e6d60227cd72349e1d4
+- filename: terraform/vsphere/admin.auto.tfvars.example
+  checksum: adda9edea0b605c2217fffb3a3573c26dad4c787cc3271887c594838908b4358
+- filename: terraform/vsphere/.terraform.lock.hcl
+  checksum: 4968b95ee00361bf0333c1a08ba1031212307f1e9d99c0200a25fc4637150166
+- filename: terraform/vsphere/main.tf
+  checksum: f3cb3f68f4f2866826570774f26d587611f405fae8fe1b9bafd98d233985aa0b
+- filename: terraform/vsphere/outputs.tf
+  checksum: 89a8310ff52f01577d01f5c98d87d21dff2c72fa84780a8b410b3c5b725bea82
+- filename: vmware.tf
+  checksum: 511f38e48b2c89cba6e39382b0d0eadf278ba068422c7d0f06177eb416a35cc3
+- filename: vsphere-manifest.yml.tpl
+  checksum: 2a14011971d977be7dae9d7c65ac76a0d32ef5b104e2d5a3d1336ec832eb04b3
